@@ -16,7 +16,7 @@
                     type="name"
                     class="form-control"
                     name="name"
-                    value
+                    value 
                     required
                     autofocus
                     v-model="form.name"

@@ -1,28 +1,96 @@
 <template>
   <div class="slides">
-    <b-carousel
+     <b-carousel
       id="carousel-1"
       v-model="slide"
-      :interval="3000"
+      :interval="4000"
       controls
       indicators
-      background="#ccc"
+      background="#ababab"
       img-width="1024"
       img-height="480"
-      background-color=black
-      style="text-shadow: 1px 1px 2px #000;"
+      style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-      <b-carousel-slide img-src="https://storage-asset.msi.com/global/picture/banner/banner_16206346080811b46b44b65364efbf6898a5b9cbc5.jpeg" ></b-carousel-slide>
+    <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/aa1.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+     
+      <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/aa2.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
 
-      <b-carousel-slide img-src="https://storage-asset.msi.com/global/picture/banner/banner_1620635919f28c2997eeedd568b072ea04ca5a67c1.jpeg" ></b-carousel-slide>
 
-      <b-carousel-slide img-src="https://storage-asset.msi.com/global/picture/banner/banner_16206352348866ed42a0c153cf608565d872e4765e.jpeg" ></b-carousel-slide>
+      <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/aa3.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
 
-      <b-carousel-slide img-src="https://storage-asset.msi.com/global/picture/banner/banner_1620637220ba7bd83b787a67761ef60081d80bee56.jpeg" ></b-carousel-slide>
+      <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/aa4.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
 
+      <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/aa5.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+
+      <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img-fluid w-100"
+            width="1024"
+            height="480"
+            src="@/assets/aa6.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+
+     
     </b-carousel>
+
+ 
+
 <br>
   
 
@@ -60,15 +128,23 @@
 <script>
 /* eslint-disable */
 import axios from 'axios'
-  export default {
+ export default {
     data() {
       return {
         slide: 0,
-        sliding: null,
-        productfields:{},
-        products: {},
+        sliding: null
       }
     },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    },
+  
+
     created () {
     axios.get(`http://localhost:4000/products`)
     .then(response => {

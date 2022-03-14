@@ -3,7 +3,7 @@
     <br />
     <div class="img-fluid col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <img
-        src="https://www.sytong2013.com/template/sytong/static/picture/Contact-Us-Banner.jpg"
+        src="@/assets/f1.jpg"
         height="100%"
         width="100%"
         alt=""

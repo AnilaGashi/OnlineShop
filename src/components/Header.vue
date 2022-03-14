@@ -40,12 +40,12 @@
           <b-nav-item-dropdown text="Users" right>
             <b-dropdown-item>
               <router-link class="nav-link" to="/users-list">
-                <a>Users List</a>
+                <a>Employees List</a>
               </router-link>
               </b-dropdown-item>
             <b-dropdown-item>
               <router-link class="nav-link" to="/add-user">
-                <a>Add User</a>
+                <a>Add Employee</a>
               </router-link>
               </b-dropdown-item>
                 <b-dropdown-item>

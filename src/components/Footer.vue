@@ -1,3 +1,4 @@
+
 <template>
     <div class="footer-area footer-padding ">
             <div class="container">
@@ -5,7 +6,7 @@
                     <div class="logo col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <div class="single-footer-caption mb-50">
                             <div class="single-footer-caption mb-30">
-                                <!-- logo -->
+                                
                                 <div class="footer-logo">
                                         <img
                                             src="@/assets/12.png"
@@ -29,7 +30,7 @@
                                 <h4>Quick Links</h4>
                                 <ul>
                                     <li><router-link class="nav-link" to="/"><a>Home</a></router-link></li>
-                                    <!-- <li><router-link class="nav-link" to="/products"><a>Products</a></router-link></li> -->
+                                   
                                      <li><router-link class="nav-link" to="/AllProducts"><a>Products</a></router-link></li>
                                       <li><router-link class="nav-link" to="/About"><a>About Us</a></router-link></li>
                                 </ul>
@@ -41,9 +42,9 @@
                             <div class="footer-tittle">
                                 <h4>New Products</h4>
                                 <ul class="pb-3">
-                                   <li><router-link class="nav-link" to="/AllProducts"><a>Laptops</a></router-link></li>
-                                   <li><router-link class="nav-link" to="/AllProducts"><a>Gaming Chairs</a></router-link></li>
-                                   <li><router-link class="nav-link" to="/AllProducts"><a>Game Consoles</a></router-link></li>
+                                   <li><router-link class="nav-link" to="/AllProducts"><a>Jersey</a></router-link></li>
+                                   <li><router-link class="nav-link" to="/AllProducts"><a>Nike</a></router-link></li>
+                                   <li><router-link class="nav-link" to="/AllProducts"><a>Adidas</a></router-link></li>
                                 </ul>
                             </div>
                         </div>
@@ -54,8 +55,8 @@
                                 <h4>Support</h4>
                                 <ul class="pt-2">
                                     <li class="pt-1"><b-icon  class="m-1" icon="telephone-fill"></b-icon> +38344111258 </li>
-                                    <li class="pt-1"><b-icon class="m-1" icon="inbox-fill"></b-icon>onlineshop@support.com</li>
-                                    <li class="pt-1"><b-icon class="m-1" icon="geo-alt-fill"></b-icon>Prishtine-Ferizaj km.6</li>
+                                    <li class="pt-1"><b-icon class="m-1" icon="inbox-fill"></b-icon>megasport@support.com</li>
+                                    <li class="pt-1"><b-icon class="m-1" icon="geo-alt-fill"></b-icon>Prishtine-Veternik</li>
                                     <div class="icons">
                                     <li class="pt-1"><a href="https://www.facebook.com/"><b-icon class="h2 mb-2 m-2" icon="facebook" variant="primary"></b-icon></a>
                                     <a href="https://www.instagram.com/"><b-icon class="h2 mb-2 m-2" icon="instagram" variant="danger"></b-icon></a>
@@ -205,3 +206,4 @@ li{
         background-color: rgbz(56,62,66);
     }
 </style>
+
